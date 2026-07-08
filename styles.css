@@ -122,6 +122,45 @@ h1, h2, h3 {
   opacity: 0.8;
 }
 
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.tab {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--charcoal);
+  background: transparent;
+  color: var(--charcoal);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tab:hover {
+  background: var(--peach);
+  border-color: var(--peach);
+}
+
+.tab.active {
+  background: var(--charcoal);
+  border-color: var(--charcoal);
+  color: var(--warm-white);
+}
+
+.empty-state {
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
 /* Products */
 .product-grid {
   display: grid;

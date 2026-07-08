@@ -28,9 +28,16 @@
       <h2>Nossa coleção em crescimento</h2>
       <p class="section-sub">Sempre chegando modelos novos — fala com a gente pra ver o que temos disponível.</p>
 
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+        <button class="tab" data-filter="masculino" role="tab" aria-selected="false">Óculos Masculinos</button>
+        <button class="tab" data-filter="feminino" role="tab" aria-selected="false">Óculos Femininos</button>
+        <button class="tab" data-filter="unisex" role="tab" aria-selected="false">Óculos Unissex</button>
+      </div>
+
       <div class="product-grid">
 
-        <article class="product-card">
+        <article class="product-card" data-category="masculino">
           <img src="assets/products/preto-esportivo.jpg" alt="Óculos preto esportivo Sunblessed">
           <div class="product-info">
             <h3>Óculos de Sol 3312 Sunblack</h3>
@@ -39,7 +46,7 @@
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="unisex">
           <img src="assets/products/transparente-praia.jpg" alt="Óculos transparente estilo praia Sunblessed">
           <div class="product-info">
             <h3>Óculos de Sol 3315 Beach Day</h3>
@@ -48,7 +55,7 @@
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="feminino">
           <img src="assets/products/fundo-italia-dourado.jpg" alt="Óculos dourado Fundo Italia Sunblessed">
           <div class="product-info">
             <h3>Óculos 3317 Italy Style</h3>
@@ -58,6 +65,8 @@
         </article>
 
       </div>
+
+      <p class="empty-state" hidden>Nenhum óculos nessa categoria ainda — fala com a gente no WhatsApp que a gente confere o estoque.</p>
     </div>
   </section>
 
@@ -87,5 +96,6 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
