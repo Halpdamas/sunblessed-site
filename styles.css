@@ -122,6 +122,28 @@ h1, h2, h3 {
   opacity: 0.8;
 }
 
+/* Benefits bar */
+.benefits-bar {
+  background: var(--charcoal);
+  color: var(--warm-white);
+  padding: 14px 0;
+}
+
+.benefits-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 40px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.benefits-inner span::before {
+  content: "✓ ";
+  color: var(--peach);
+}
+
 /* Tabs */
 .tabs {
   display: flex;
